@@ -1,0 +1,228 @@
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #414106;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.15);
+    --color-primary-variant: #111088;
+    --color-dark-variant: 0677483;
+    --color-background: #f6f6f9;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --card-padding: 1.Brom;
+    --padding-1: 1.2rem;
+    --box-shadow: 2rem Srem ver(--color-light);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-family: 14px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    user-select: none;
+    overflow-x: none;
+}
+.container{
+    display: grid;
+    width: 97%;
+    margin: 0 auto ;
+    background: rgb(235, 233, 233);
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem; 
+}
+
+a {
+    color: var(--color-dark);
+}
+
+h1{
+    font-weight: 800;
+    font-size:1.8rem;
+}
+
+h2{
+    font-size:1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{ 
+    font-size: 0.8rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+/* SIDE BAR */
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap:0.8rem;
+}
+aside .logo img{
+    width: 2rem;
+    height: 100%;
+}
+aside .logo span{
+    color:#776438;
+}
+
+aside .close {
+    display: none;
+}
+
+aside .sidebar-menu {
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 2rem;
+}
+
+aside h3 {
+    font-weight: 900;
+}
+
+aside .sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem;
+    color: var(--color-info-dark);
+    position: relative;
+    height: 3.7rem;
+    transition: all 0.2s ease-in-out;
+}
+
+aside .sidebar-menu a:hover {
+    /* background: var(--color-primary); */
+    /* background-color: var(--color-white); */
+    margin-left: 1rem;
+}
+
+aside .sidebar-menu a span {
+    font-size: 1rem;
+    transition: all 2s ease-in;
+}
+
+aside .sidebar-menu a:last-child{
+    position: absolute;
+    padding-left: -1rem;
+    bottom: 2rem;
+    /* width: 100%; */
+}
+
+/* aside .sidebar-menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.4rem;
+    height: 0.4rem;
+    background: var(--color-primary);
+    border-radius: 50%;
+} */
+
+aside .sidebar-menu a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    padding-left: 0;
+}
+
+aside .sidebar-menu a.active:before{
+    content: " ";
+    width: 4px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+/* aside .sidebar-menu a.active:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+} */
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    padding-left: calc(1rem - 2px);
+}
+
+aside .message_counts{
+    background: red;
+    color: white;
+    border-radius: var(--border-radius-1);
+    padding: 2px 10px;
+    font-size: 4px;
+    font-weight: 700;
+}
