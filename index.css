@@ -395,6 +395,11 @@ main .recent-orders a{
     color: var(--color-primary);
 }
 
+.recent-orders a:hover{
+    font-weight: 900;
+    color: #4455f1;
+}
+
 /* ######### RIGHT ############ */
 .right {
     margin-top: 0.3rem;
@@ -520,4 +525,50 @@ main .recent-orders a{
     width: 100%;
     align-items: start;
     margin: 0;
+}
+
+.right .sales-analytics .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+} 
+
+.right .sales-analytics .item.offline .icon{
+    background: var(--color-danger);
+}
+.right .sales-analytics .item.online .icon{
+    background: var(--color-success);
+}
+
+.right .sales-analytics .add-product{
+    background: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem ;
+}
+
+.right .sales-analytics .add-product div h3{
+    font-weight: 600;
+}
+
+.right .add-product:hover {
+    background-color: #737fec1f;
+}
+
+/* ########### MEDIA QURIES ############# */
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 94%;
+        background-color: red;
+    }
 }
